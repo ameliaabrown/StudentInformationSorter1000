@@ -8,7 +8,7 @@ public class SISRunner
 
 		public static void main(String[] args) throws IOException
 			{
-				System.out.println("hello");
+				//System.out.println("hello");
 
 				Scanner names = new Scanner (new File ("studentList"));
 				while(names.hasNext())
