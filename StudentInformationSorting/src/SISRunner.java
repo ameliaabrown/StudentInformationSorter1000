@@ -31,7 +31,7 @@ public class SISRunner
 				String grade3 = file.next();
 				
 				students.add(new Student (firstName, lastName, 0, period1, period2, period3, grade1, grade2, grade3));
-				
+				//hekhtf
 				//System.out.println(file.next());
 				//System.out.println(grade3);
 
