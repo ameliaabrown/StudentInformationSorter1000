@@ -6,4 +6,5 @@ public class LastNameSorter
 			{
 				return s1.getLastName().compareTo(s2.getLastName());
 			}
+		
 	}
