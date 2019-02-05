@@ -9,6 +9,7 @@ public class AddOrDeleteStudents
 		{
 			
 			Scanner userInput1 = new Scanner(System.in);
+			Scanner s2 = new Scanner(System.in);
 			System.out.println("1) Delete a student.");
 			System.out.println("2) Add a student.");
 			int choice = userInput1.nextInt();
@@ -24,7 +25,26 @@ public class AddOrDeleteStudents
 				}
 			else 
 				{
-					//add student //
+					System.out.println("Enter the student's first name.");
+					String firstName = s2.next();
+					System.out.println("Enter the student's last name.");
+					String lastName = s2.next();
+					System.out.println("Enter the student's first period.");
+					String period1 = s2.next();
+					System.out.println("Enter the student's first period grade.");
+					String grade1 = s2.next();
+					System.out.println("Enter the student's second period.");
+					String period2 = s2.next();
+					System.out.println("Enter the student's second period grade.");
+					String grade2 = s2.next();
+					System.out.println("Enter the student's third period.");
+					String period3 = s2.next();
+					System.out.println("Enter the student's third period grade.");
+					String grade3 = s2.next();
+					
+					SISRunner.students.add(new Student (firstName, lastName, 0, period1, period2, period3, grade1, grade2, grade3));
+					System.out.println(firstName +" "+ lastName + " has been added to the class.");
+					PrintStudents.printStudents();
 				
 				}
 		}

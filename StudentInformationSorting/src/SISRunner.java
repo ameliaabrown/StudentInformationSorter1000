@@ -42,7 +42,7 @@ public class SISRunner
 //				{
 //					System.out.println(students.get(i).getPeriod1());
 //				}
-			PrintStudents.printStudents();
+//			PrintStudents.printStudents();
 			
 			AddOrDeleteStudents.printMenu();
 
