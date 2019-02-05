@@ -16,7 +16,7 @@ public class SISRunner
 		
 		public static void readFile() throws IOException
 		{
-			// this prints out whatever you want to put in the syso
+			
 			Scanner file = new Scanner (new File ("studentList"));
 			// don't syso anything in while loop
 			while(file.hasNext())
@@ -36,12 +36,11 @@ public class SISRunner
 				//System.out.println(grade3);
 
 			}
-		
+				// this prints out whatever you want to put in the syso
 				for (int i =0; i< students.size(); i++)
 				{
 					System.out.println(students.get(i).getPeriod1());
-					
-									}
+				}
 
 			}
 		}
