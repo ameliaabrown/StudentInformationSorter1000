@@ -38,10 +38,13 @@ public class SISRunner
 
 			}
 				// this prints out whatever you want to put in the syso
-				for (int i =0; i< students.size(); i++)
-				{
-					System.out.println(students.get(i).getPeriod1());
-				}
+//				for (int i =0; i< students.size(); i++)
+//				{
+//					System.out.println(students.get(i).getPeriod1());
+//				}
+			PrintStudents.printStudents();
+			
+			AddOrDeleteStudents.printMenu();
 
 			}
 		}
