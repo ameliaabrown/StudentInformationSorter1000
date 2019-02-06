@@ -12,8 +12,9 @@ public class SISRunner
 		
 		public static void main(String[] args) throws IOException
 			{
-				readFile();
-				SetGPA.setGPA();
+				//readFile();
+				//SetGPA.setGPA();
+				MainMenu.MainMenu();
 			}
 		
 		public static void readFile() throws IOException
