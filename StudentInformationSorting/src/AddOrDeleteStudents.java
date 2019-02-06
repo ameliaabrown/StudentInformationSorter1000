@@ -57,7 +57,7 @@ public class AddOrDeleteStudents
 		
 		public static void createGPA()
 		{
-			for(int i = 0; i<SISRunner.students.size(); i++)
+			for(int i = 0; i<1; i++)
 				{
 					GPA = 0; 
 					String[] studentLetterGrades = new String[3];
@@ -109,7 +109,8 @@ public class AddOrDeleteStudents
 							}
 						}
 					GPA/=3;
-					SISRunner.students.get(i).setGPA(GPA);
+					
+					
 		}
 		}
 	}
