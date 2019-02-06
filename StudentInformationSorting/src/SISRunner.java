@@ -44,7 +44,7 @@ public class SISRunner
 //					System.out.println(students.get(i).getPeriod1());
 //				}
 //			PrintStudents.printStudents();
-			
+			SetGPA.setGPA();
 			AddOrDeleteStudents.printMenu();
 
 			}
