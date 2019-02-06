@@ -13,6 +13,7 @@ public class SISRunner
 		public static void main(String[] args) throws IOException
 			{
 				readFile();
+				SetGPA.setGPA();
 			}
 		
 		public static void readFile() throws IOException
