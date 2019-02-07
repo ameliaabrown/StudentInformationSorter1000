@@ -4,11 +4,14 @@ public class MainMenu {
 
 	public static void MainMenu ()
 	{
+
 		Scanner userInput = new Scanner(System.in);
+
 		System.out.println("What would you like to do?");
 		System.out.println("1) add or delete a student");
 		System.out.println("2) change student grades/schedule");
 		System.out.println("3) sort students");
+
 		int firstChoice = userInput.nextInt();
 			if (firstChoice == 1)
 			{
@@ -49,4 +52,5 @@ public class MainMenu {
 	}
 	
 	
+
 }

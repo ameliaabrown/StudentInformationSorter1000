@@ -58,6 +58,7 @@ public class SetGPA
 							}
 						GPA/=3;
 						SISRunner.students.get(i).setGPA(GPA);
+						GPA=0;
 						//System.out.printf("%.2f", SISRunner.students.get(i).getGPA());
 						//System.out.println();
 						//->>whoever is in charge of printing...lines 63 and 64 are examples of how you need to print the GPA so that it is formatted to 2 decimal places
