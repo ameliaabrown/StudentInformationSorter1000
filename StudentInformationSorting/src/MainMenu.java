@@ -1,3 +1,4 @@
+import java.util.Collections;
 import java.util.Scanner;
 
 public class MainMenu {
@@ -32,15 +33,19 @@ public class MainMenu {
 				
 				if (sortingChoice == 1)
 				{
-					
+					Collections.sort(SISRunner.students, new LastNameSorter());
+					PrintStudents.printStudents();
 				}
 				if (sortingChoice == 2)
 				{
-					//GPASorter.GPASorter();
+					Collections.sort(SISRunner.students, new GPASorter());
+					PrintStudents.printStudents();
+					
 				}
 				if (sortingChoice == 3)
 				{
-					//LastNameSorter.compare();
+					Collections.sort(SISRunner.students, new PeriodSorter());
+					PrintStudents.printStudents();
 				}
 			}
 			if (firstChoice != 3 && firstChoice != 2 && firstChoice != 1)
