@@ -9,15 +9,33 @@ import java.util.Scanner;
 public class SISRunner
 	{
 		static ArrayList<Student> students = new ArrayList <Student>();
+		static boolean run = true;
+		static Scanner s1 = new Scanner(System.in);
 		
 		public static void main(String[] args) throws IOException
 			{
-				readFile();
-				SetGPA.setGPA();
-				GradesChange.GradeChange();
-				
-			}
-		
+			while (run)
+					{
+						readFile();
+						SetGPA.setGPA();
+						MainMenu.MainMenu();
+						
+						System.out.println("Would you like to use this program again?");
+						System.out.println("1) Yes");
+						System.out.println("2) No");
+						int choiceToRun = s1.nextInt();
+						
+						if (choiceToRun==1)
+							{
+								
+							}
+						else
+							{
+								run=false;
+							}
+					}
+				}
+
 		public static void readFile() throws IOException
 		{
 			
@@ -35,19 +53,7 @@ public class SISRunner
 				String grade3 = file.next();
 				
 				students.add(new Student (firstName, lastName, 0, period1, period2, period3, grade1, grade2, grade3));
-				
-				//System.out.println(file.next());
-				//System.out.println(grade3);
-
-			}
-				// this prints out whatever you want to put in the syso
-//				for (int i =0; i< students.size(); i++)
-//				{
-//					System.out.println(students.get(i).getPeriod1());
-//				}
-//			PrintStudents.printStudents();
-			
-			//AddOrDeleteStudents.printMenu();
-
 			}
 		}
+		}
+
