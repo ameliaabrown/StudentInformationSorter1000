@@ -18,10 +18,12 @@ public class MainMenu {
 				{
 					AddOrDeleteStudents.printMenu();
 				}
+			
 			if (firstChoice == 2)
 				{
-				
+					GradesChange.GradeChange();
 				}
+			
 			if (firstChoice == 3)
 				{
 					Scanner userInput2 = new Scanner (System.in);
