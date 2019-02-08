@@ -35,18 +35,10 @@ public class SISRunner
 				
 				students.add(new Student (firstName, lastName, 0, period1, period2, period3, grade1, grade2, grade3));
 				
-				//System.out.println(file.next());
-				//System.out.println(grade3);
+			
 
 			}
-				// this prints out whatever you want to put in the syso
-//				for (int i =0; i< students.size(); i++)
-//				{
-//					System.out.println(students.get(i).getPeriod1());
-//				}
-//			PrintStudents.printStudents();
-			//SetGPA.setGPA();
-			//AddOrDeleteStudents.printMenu();
+				
 
 			}
 		}
