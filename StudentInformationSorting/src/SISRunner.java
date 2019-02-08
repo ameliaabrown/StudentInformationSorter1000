@@ -9,13 +9,32 @@ import java.util.Scanner;
 public class SISRunner
 	{
 		static ArrayList<Student> students = new ArrayList <Student>();
+		static boolean run = true;
+		static Scanner s1 = new Scanner(System.in);
 		
 		public static void main(String[] args) throws IOException
 			{
-				readFile();
-				SetGPA.setGPA();
-				MainMenu.MainMenu();
-			}
+			while (run)
+					{
+						readFile();
+						SetGPA.setGPA();
+						MainMenu.MainMenu();
+						
+						System.out.println("Would you like to use this program again?");
+						System.out.println("1) Yes");
+						System.out.println("2) No");
+						int choiceToRun = s1.nextInt();
+						
+						if (choiceToRun==1)
+							{
+								
+							}
+						else
+							{
+								run=false;
+							}
+					}
+				}
 		
 		public static void readFile() throws IOException
 		{
