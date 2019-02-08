@@ -35,7 +35,7 @@ public class SISRunner
 							}
 					}
 				}
-		
+
 		public static void readFile() throws IOException
 		{
 			
@@ -53,12 +53,7 @@ public class SISRunner
 				String grade3 = file.next();
 				
 				students.add(new Student (firstName, lastName, 0, period1, period2, period3, grade1, grade2, grade3));
-				
-			
-
 			}
-				
-
-			}
+		}
 		}
 
