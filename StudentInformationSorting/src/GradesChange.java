@@ -12,7 +12,7 @@ public class GradesChange
 			Scanner userInput = new Scanner(System.in);
 			int changes = userInput.nextInt();
 			
-			System.out.println("You choose " + SISRunner.students.get(changes-1).getFirstName());
+			System.out.println("You chose " + SISRunner.students.get(changes-1).getFirstName()+".");
 			
 			System.out.println("Which period would you like to change?");
 			Scanner userInput1 = new Scanner(System.in);
@@ -35,13 +35,9 @@ public class GradesChange
 					SISRunner.students.get(changes-1).setGrade3(grades);
 				}
 			
-			System.out.println("You just changed " + SISRunner.students.get(changes-1).getFirstName() +  "'s "+ "period " + period + " grade");
-			PrintStudents.printStudents();
-			
-			//2
-			
-			
-			
+			System.out.println("You just changed " + SISRunner.students.get(changes-1).getFirstName() +  "'s "+ "period " + period + " grade.");
+			SetGPA.setGPA();
+			PrintStudents.printStudents();	
 		}
 
 	}

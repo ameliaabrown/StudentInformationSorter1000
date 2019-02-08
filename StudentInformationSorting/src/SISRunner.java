@@ -14,11 +14,12 @@ public class SISRunner
 		
 		public static void main(String[] args) throws IOException
 			{
-			while (run)
-					{
 						readFile();
+				while (run)
+					{
 						SetGPA.setGPA();
 						MainMenu.MainMenu();
+						
 						
 						System.out.println("Would you like to use this program again?");
 						System.out.println("1) Yes");
@@ -32,6 +33,7 @@ public class SISRunner
 						else
 							{
 								run=false;
+								System.out.println("Thank you for using the Student Information Sorter 1000!");
 							}
 					}
 				}
