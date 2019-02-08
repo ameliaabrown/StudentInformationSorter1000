@@ -9,9 +9,9 @@ public class MainMenu {
 		Scanner userInput = new Scanner(System.in);
 
 		System.out.println("What would you like to do?");
-		System.out.println("1) add or delete a student");
-		System.out.println("2) change student grades/schedule");
-		System.out.println("3) sort students");
+		System.out.println("1) Add or delete a student");
+		System.out.println("2) Change student grades/schedule");
+		System.out.println("3) Sort students");
 
 		int firstChoice = userInput.nextInt();
 			if (firstChoice == 1)
@@ -26,9 +26,9 @@ public class MainMenu {
 			{
 				Scanner userInput2 = new Scanner (System.in);
 				System.out.println("Do you want to sort by...");
-				System.out.println("1) last name");
+				System.out.println("1) Last name");
 				System.out.println("2) GPA");
-				System.out.println("3) period");
+				System.out.println("3) Period");
 				int sortingChoice = userInput2.nextInt();
 				
 				if (sortingChoice == 1)
