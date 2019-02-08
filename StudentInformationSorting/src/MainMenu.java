@@ -44,6 +44,8 @@ public class MainMenu {
 						}
 					if (sortingChoice == 3)
 						{
+							Collections.sort(SISRunner.students, new LastNameSorter());
+							//leave this in ^^ it should be sorted alphabetically first 
 							Collections.sort(SISRunner.students, new PeriodSorter());
 							PrintStudents.printStudents();
 						}
