@@ -14,6 +14,7 @@ public class SISRunner
 			{
 				readFile();
 				SetGPA.setGPA();
+				
 			}
 		
 		public static void readFile() throws IOException
