@@ -35,7 +35,9 @@ public class GradesChange
 					SISRunner.students.get(changes-1).setGrade3(grades);
 				}
 			
+			System.out.println("You just changed " + SISRunner.students.get(changes-1).getFirstName() +  "'s "+ "period " + period + " grade");
 			PrintStudents.printStudents();
+			
 			
 			
 			

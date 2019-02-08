@@ -14,6 +14,7 @@ public class SISRunner
 			{
 				readFile();
 				SetGPA.setGPA();
+				GradesChange.GradeChange();
 				
 			}
 		
@@ -46,7 +47,7 @@ public class SISRunner
 //				}
 //			PrintStudents.printStudents();
 			
-			AddOrDeleteStudents.printMenu();
+			//AddOrDeleteStudents.printMenu();
 
 			}
 		}
