@@ -14,6 +14,7 @@ public class SISRunner
 		
 		public static void main(String[] args) throws IOException
 			{
+			System.out.println("Welcome to the SIS Converter!");
 						readFile();
 				while (run)
 					{
