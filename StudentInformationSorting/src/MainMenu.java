@@ -12,7 +12,7 @@ public class MainMenu {
 
 		System.out.println("What would you like to do?");
 		System.out.println("1) Add or delete a student");
-		System.out.println("2) Change student grades/schedule");
+		System.out.println("2) Change a student's grade");
 		System.out.println("3) Sort students");
 
 		int firstChoice = userInput.nextInt();
