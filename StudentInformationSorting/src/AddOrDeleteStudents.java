@@ -13,8 +13,8 @@ public class AddOrDeleteStudents
 			
 			Scanner userInput1 = new Scanner(System.in);
 			Scanner s2 = new Scanner(System.in);
-			System.out.println("1) Delete a student.");
-			System.out.println("2) Add a student.");
+			System.out.println("1) Delete a student");
+			System.out.println("2) Add a student");
 			int choice = userInput1.nextInt();
 			
 			if(choice==1)

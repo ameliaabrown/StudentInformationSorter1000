@@ -17,7 +17,7 @@ public class GradesChange
 			System.out.println("Which period would you like to change?");
 			Scanner userInput1 = new Scanner(System.in);
 			int period = userInput1.nextInt();
-			System.out.println("What would you want the new grade to be?");
+			System.out.println("What do you want the new grade to be?");
 			Scanner userInput2 = new Scanner(System.in);
 			String grades = userInput2.nextLine();
 			

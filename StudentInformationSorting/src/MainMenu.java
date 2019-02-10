@@ -12,7 +12,7 @@ public class MainMenu {
 
 		System.out.println("What would you like to do?");
 		System.out.println("1) Add or delete a student");
-		System.out.println("2) Change a student's grade");
+		System.out.println("2) Change a student's grade or schedule");
 		System.out.println("3) Sort students");
 
 		int firstChoice = userInput.nextInt();
@@ -23,13 +23,26 @@ public class MainMenu {
 			
 			if (firstChoice == 2)
 				{
-					GradesChange.GradeChange();
+					Scanner input = new Scanner (System.in);
+					System.out.println("1) Change student's grade");
+					System.out.println("2) Change student's schedule");
+					int changeChoice = userInput.nextInt();
+					
+					if (changeChoice == 1)
+					{
+						GradesChange.GradeChange();
+					}
+					if (changeChoice == 2)
+					{
+						
+					}
+					
 				}
 			
 			if (firstChoice == 3)
 				{
 					Scanner userInput2 = new Scanner (System.in);
-					System.out.println("Do you want to sort by...");
+					System.out.println("Do you want to sort by");
 					System.out.println("1) Last name");
 					System.out.println("2) GPA");
 					System.out.println("3) Period");
@@ -66,10 +79,7 @@ public class MainMenu {
 				{
 					MainMenu();
 				}
-			
-	
+
 	}
 	
-	
-
 }
